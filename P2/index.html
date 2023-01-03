@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+<title>Hasta el origen y mas alla 7</title>
+
+
 </head>
-<body>
-    
+<body style="background-color:yellow">
+<h1>Hasta el origen y mas alla 7</h1>
+<p><h3>Hay un gran abuso del parametro "origin"(El nombre que recibe el repositorio remoto principal) ya que git puede especificar a la nada como un origen el cual lo da como valido git a "git push"(repositorio local a repositorio remoto) y tambien a "git fetch" (Descargar contenidos desde repositorio remoto)<br>Para especificar la nada se usa:"git push origin :"x" " o "git fetch origin :"x" " en las 2 hay que poner un parametro vacio para que se especifique la nada.
+</h3></p>
+
+<img style="margin-top:20px;margin-left:50px" src="p1.png" alt="Trulli" width="500" height="500">
+<br>
+<table style="background-color:green;width:50%;float:right;margin-top:-300px;;">
+    <tr>
+        <td>
+ <p><h3>En esta imagen vemos un origen a "nada" de una rama remota. Para eliminar esta se usa "git push origin :foo" (sin olvidar el parametro vacio)</h3></p>
+        </td>    
+</tr>
+</table>
+<img style="margin-top:20px;margin-left:50px" src="p2.png" alt="Trulli" width="500" height="500">
+<br>
+<table style="background-color:green;width:50%;float:right;margin-top:-300px;;">
+    <tr>
+        <td>
+ <p><h3>En esta imagen vemos que la rama "foo" se ha eliminado , usando lo dicho anteriormente: "git push origin :foo"</h3></p>
+        </td>    
+</tr>
+</table>
+<img style="margin-top:20px;margin-left:50px" src="p3.png" alt="Trulli" width="500" height="500">
+<br>
+<table style="background-color:green;width:50%;float:right;margin-top:-300px;;">
+    <tr>
+        <td>
+ <p><h3>Se hace fetch a "nada" en un lugar local , crea otra rama. Para hacer esto se usa "git fetch origin :bar"(sin olvidar otra vez el parametro vacio)</h3></p>
+        </td>    
+</tr>
+</table>
+
+<h2>Ejercicio 2</h2>
+<h3>Se pide eliminar una rama remota y crear una nueva usando "git fetch"</h3>
+
+<img style="margin-top:20px;margin-left:50px" src="p4.png" alt="Trulli" width="500" height="500">
+<br>
+<table style="background-color:green;width:50%;float:right;margin-top:-300px;;">
+    <tr>
+        <td>
+ <p><h3>En la primera imagen vemos que existe la rama "foo" , para hacer el ejercicio tenemos que eliminarla para eso usamos "git push origin :foo"<br>Vemos lo que se escribiria en la consolo<br>En la tercera imagen vemos como se veria al eliminar "foo"</h3></p>
+        </td>    
+</tr>
+</table>
+
+<img style="margin-top:20px;margin-left:50px" src="p5.png" alt="Trulli" width="500" height="500">
+<br>
+<table style="background-color:green;width:50%;float:right;margin-top:-300px;;">
+    <tr>
+        <td>
+ <p><h3>Lo segundo que te pide el ejercicio es crear una nueva rama. Para eso usamos "git fetch origin :bar"<br>En la imagen vemos lo que se tiene que escribir en la consola<br>Al final vemos el resultado del ejercicio , la rama "foo" eliminado y una rama "bar" añadida.</h3></p>
+        </td>    
+</tr>
+</table>
+
+
+
+
 </body>
+
 </html>
